@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Taxi</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="route_details_fragment_label">Specify your route</string>
+    <string name="choose_taxi_fragment_label">Choose a taxi</string>
+
+    <string name="button_search">Search a Taxi</string>
+    <string name="button_go_back">Previous</string>
+
+    <string name="label_pick_up_point">Pick up point:</string>
+    <string name="label_destination_point">Destination point:</string>
+
+    <string name="label_choose_taxi">Choose a Taxi:</string>
+
+    <string name="tools_pick_up_point">Raanana</string>
+    <string name="tools_destination_point">Hod Hasharon</string>
+    <string name="content_description_taxi_logo">Taxi logo</string>
+    <string name="tools_taxi_item_name">Yandex Go Taxi</string>
+    <string name="tools_taxi_item_eta">1h 15m</string>
+
+    <string name="taxi_name_0">Yandex Go</string>
+    <string name="taxi_name_1">Uber</string>
+    <string name="taxi_name_2">Get Taxi</string>
+    <string name="taxi_name_3">City Mobile</string>
+
+    <string name="points_are_empty">Please input Pick Up and Destination points</string>
+    <string name="pick_up_point_is_empty">Please input Pick Up point</string>
+    <string name="destination_point_is_empty">Please input Destination point</string>
+
+    <string name="choose_taxi_item_toast">You choose the taxi %1$s</string>
+</resources>

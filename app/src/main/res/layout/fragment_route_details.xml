@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".ui.RouteDetailsFragment">
+
+    <LinearLayout
+        android:id="@+id/layout_pick_up_point"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/layout_destination_point"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/label_pick_up_point" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_pick_up_point"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            tools:text="@string/tools_pick_up_point" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_destination_point"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/layout_pick_up_point">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/label_destination_point" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_destination_point"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            tools:text="@string/tools_destination_point" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_search"
+        app:layout_constraintTop_toBottomOf="@id/layout_destination_point"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
